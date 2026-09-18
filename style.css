@@ -82,12 +82,31 @@ body{
     position: absolute;
 }
 
-footer div{
+#sosmed {
+    width: 100vw;
+    height: 200px;
+    background: rgb(106, 81, 64);
+    border-radius: 20px;
+}
+
+footer{
+    height: 200px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+.email {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     width: 100px;
     height: 40px;
     background: beige;
     border-radius: 20px;
     left: 15%;
-    top: 100%;
+    top:30%;
 }
