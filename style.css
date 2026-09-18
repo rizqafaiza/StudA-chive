@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: beige;
+    font-family: 'Times New Roman', Garamond;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.bgvid{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.container .teksboks{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.45) ;
+    border-radius: 20px;
+    width: 20%;
+    padding: 15px;
+    color: whitesmoke;
+}
+
+#productsection{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(106, 81, 64);
+    border-radius: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    pad: 20px;
+}
+
+#productsection .produk{
+    top: 20%;
+    height: 500px;
+    width: 300px;
+    background: beige;
+    opacity: 0.5;
+    border-radius: 20px;
+    border: 5px solid rgb(222, 222, 200);
+    z-index: 0;
+}
+
+#productsection h1{
+    position: absolute;
+    font-size: 200px;
+    color: whitesmoke;
+    background: black;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.container #cs{
+    position: absolute;
+    font-size: 100px;
+    color: whitesmoke;
+    background: black;
+    opacity: 0.8;
+}
+
+#cs{
+    top: 20%;
+    left: 25%;
+}
