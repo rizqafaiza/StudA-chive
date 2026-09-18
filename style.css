@@ -76,15 +76,18 @@ body{
     z-index: 1;
 }
 
-.container #cs{
+#sosmed{
+    height: 200px; 
+    background:rgb(106, 81, 64);
     position: absolute;
-    font-size: 100px;
-    color: whitesmoke;
-    background: black;
-    opacity: 0.8;
 }
 
-#cs{
-    top: 20%;
-    left: 25%;
+footer div{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background: beige;
+    border-radius: 20px;
+    left: 15%;
+    top: 100%;
 }
