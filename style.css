@@ -76,17 +76,12 @@ body{
     z-index: 1;
 }
 
-#sosmed{
-    height: 200px; 
-    background:rgb(106, 81, 64);
-    position: absolute;
-}
-
 #sosmed {
     width: 100vw;
     height: 200px;
     background: rgb(106, 81, 64);
     border-radius: 20px;
+    position: absolute;
 }
 
 footer{
@@ -109,4 +104,17 @@ footer p {
     border-radius: 20px;
     left: 15%;
     top:30%;
+}
+
+.instagram {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    height: 40px;
+    background: beige;
+    border-radius: 20px;
+    left: 30%;
+    top:10%;
 }
