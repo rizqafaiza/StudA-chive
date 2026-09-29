@@ -25,7 +25,6 @@ body{
     border-radius: 20px;
     gap: 20px;
     justify-content: center;
-    align-items: center;
     padding: 20px;
 }
 
@@ -54,7 +53,12 @@ body{
     height: 200px;
     background: rgb(106, 81, 64);
     border-radius: 20px;
-    position: absolute;
+    position: relative;
+}
+
+#sosmed a{
+    text-decoration: none;
+    color: black;
 }
 
 footer{
@@ -95,11 +99,32 @@ footer p {
 .contheader {
     position: fixed;
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 100px;
     background: rgb(204, 204, 180);
     opacity: 0.9;
     z-index: 9999;
     width: 100vw;
+    padding: 2px 10px;
+}
+
+nav{
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    justify-content: center;
+    padding: 25px;
+}
+
+nav a{
+    background-color: rgb(106, 81, 64);
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contheader a{
+    text-decoration: none;
 }
 
 .bgvid{
@@ -129,4 +154,44 @@ footer p {
     width: 20%;
     padding: 15px;
     color: whitesmoke;
+}
+
+#produk{
+    font-size: 54px;
+    text-align: center;
+}
+
+@media screen and (max-width:780px) {
+    .contheader{
+        gap: 5px;
+    }
+
+    .contheader img{
+        width: 90px;
+        height: 70px;
+    }
+
+    .contheader nav{
+        gap: 2px;
+        font-size: 14px;
+    }
+
+    .container .teksboks{
+        width: 90%;
+        left: 5%;
+    }
+
+    #produk{
+        font-size: 32px;
+    }
+
+    .email{
+        left: 10%;
+    }
+
+    .instagram{
+        left:50%;
+    }
+
+    
 }
