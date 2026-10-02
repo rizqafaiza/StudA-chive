@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="StudA+chive, Catatan Kuliah">
     <title>StudA+chive</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,6 +14,7 @@
             <nav>
                 <a href="#beranda">Beranda</a>
                 <a href="#produk">Produk</a>
+                <a href="#metode-bayar">Pembayaran</a>
                 <a href="#sosmed">Kontak</a>
             </nav>
     
@@ -33,28 +35,43 @@
 
     </div>
     
-    <script>
-        const vid = document.querySelector('.bgvid');
-        vid.playbackRate = 0.2; 
-    </script>
-    
-
     <br/>
 
     <h1 id="produk" >PRODUK KAMI</h1>
     <div class="container" id="productsection">
-        <h1>COMING SOON</h1>
-        <div class="produk"></div>
-        <div class="produk"></div>
-        <div class="produk"></div>
-        <div class="produk"></div>
+        <div class="produk">
+            <img src="images/pembahasan uts sem 1 2024.png">
+            <h2>Pembahasan UTS Semester 1 Tahun 2024</h2>
+            <p>Mata kuliah Dasar Pemrograman, Pengantar Ilmu Komputer,
+                Logika Matematika, Matematika Dasar.
+            </p>
+        </div>
+        <div class="produk">
+            <img src="images/ringkasan pembahasan uts oak.png">
+            <h2>Organisasi dan Arsitektur Komputer</h2>
+            <p>Ringkasan pembahasan uts OAK tahun-tahun sebelumnya.</p>
+        </div>
+    </div>
+
+    <br/>
+
+    <h1 id="metode-bayar">Metode Pembayaran</h1>
+    <div id="bayar">
+        <p>Metode pembayaran yang dapat digunakan adalah Qris.</p>
+        <p>Cara memesan:
+            <ul>
+                <li>dm lewat instagram</li>
+                <li>bayar lewat qris</li>
+                <li>pesananmu dikirim via e-mail</li>
+            </ul>
+        </p>
     </div>
 
     <br/>
 
     <div id="sosmed">
+        <p>SOSIAL MEDIA:</p>
         <footer>
-            <p>SOSIAL MEDIA:</p>
 
             <div class="email">
                 <img src="images/ikon email.png" width="30" height="30">
@@ -68,4 +85,9 @@
         </footer>
     </div>
 </body>
+
+<script>
+    const vid = document.querySelector('.bgvid');
+    vid.playbackRate = 0.2; 
+</script>
 </html>

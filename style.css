@@ -16,8 +16,6 @@ body{
     border-radius: 20px;
 }
 
-
-
 #productsection{
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +24,7 @@ body{
     gap: 20px;
     justify-content: center;
     padding: 20px;
+    height: auto;
 }
 
 #productsection .produk{
@@ -33,19 +32,39 @@ body{
     height: 500px;
     width: 300px;
     background: beige;
-    opacity: 0.5;
     border-radius: 20px;
     border: 5px solid rgb(222, 222, 200);
-    z-index: 0;
 }
 
-#productsection h1{
-    position: absolute;
-    font-size: 200px;
-    color: whitesmoke;
-    background: black;
-    opacity: 0.8;
-    z-index: 1;
+.produk{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.produk img{
+    width: 250px;
+    height: 250px;
+}
+
+.produk h2{
+    text-align: center;
+}
+#bayar{
+    background-color: rgb(106, 81, 64);
+    border-radius: 20px;
+    width: 100vw;
+    height: 300px;
+    padding: 10px;
+}
+
+#bayar p{
+    background: beige;
+    border-radius: 20px;
+    border: 5px solid rgb(222, 222, 200);
 }
 
 #sosmed {
@@ -63,15 +82,19 @@ body{
 
 footer{
     height: 200px;
+    display: flex;
+    padding: 10px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
-footer p {
+#sosmed p {
     text-align: center;
     color: white;
 }
 
 .email {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -79,12 +102,9 @@ footer p {
     height: 40px;
     background: beige;
     border-radius: 20px;
-    left: 15%;
-    top:30%;
 }
 
 .instagram {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -92,8 +112,6 @@ footer p {
     height: 40px;
     background: beige;
     border-radius: 20px;
-    left: 30%;
-    top:10%;
 }
 
 .contheader {
@@ -113,7 +131,8 @@ nav{
     gap: 50px;
     font-size: 20px;
     justify-content: center;
-    padding: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 nav a{
@@ -161,6 +180,12 @@ nav a{
     text-align: center;
 }
 
+@media screen and (max-width:910px){
+    .container .teksboks{
+        width: 30%;
+    }
+}
+
 @media screen and (max-width:780px) {
     .contheader{
         gap: 5px;
@@ -184,14 +209,35 @@ nav a{
     #produk{
         font-size: 32px;
     }
+}
 
-    .email{
-        left: 10%;
+@media screen and (max-width:400px) {
+    .contheader{
+        gap: 5px;
     }
 
-    .instagram{
-        left:50%;
+    .contheader img{
+        width: 90px;
+        height: 70px;
     }
 
+    .contheader nav{
+        gap: 2px;
+        font-size: 14px;
+    }
+
+    .container .teksboks{
+        width: 90%;
+        left: 5%;
+    }
+
+    #productsection{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #produk{
+        font-size: 32px;
+    }
     
 }
